@@ -11,13 +11,13 @@ int Stack::isthisempty() const
 {
 	return (top == -1);
 }
-int Stack::IsFull() const
+int Stack::isitfull() const
 {
 	return (top == MAX_ITEMS - 1);
 }
 void Stack::Push(itemType newItem)
 {
-	if (IsFull()) {
+	if (isitfull()) {
 		cout << "Stack Overflow! " << endl;
 
 	}
