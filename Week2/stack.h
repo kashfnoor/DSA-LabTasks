@@ -13,8 +13,8 @@ private:
 
 public:
 	Stack();
-	int IsEmpty() const;
-	int IsFull() const;
+	int isthisempty() const;
+	int isitfull() const;
 	void Push(itemType newItem);
 	void Pop(itemType& item);
 	int Peek();
