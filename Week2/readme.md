@@ -1,24 +1,25 @@
- **Stack**
-The program demonstrates stack functionalities such as pushing, popping, retrieving the top element, reversing a string, checking for balanced parentheses, converting infix expressions to postfix notation, and evaluating postfix
+ **Stack**         
 
-**Files Included**
-**main.cpp**
+  The program demonstrates stack functionalities such as pushing, popping, retrieving the top element, reversing a string, checking for balanced parentheses, converting infix expressions to postfix notation, and evaluating postfix
 
-Contains the main function that executes various stack operations.
+  **Files Included**
+  **main.cpp**
+
+  Contains the main function that executes various stack operations.
 Demonstrates the usage of the CustomStack class.
 Implements string reversal, parenthesis balance checking, infix-to-postfix conversion, and postfix evaluation.
 
-**implementation.h**
-Defines the functions for stack operations and utility functions.
+  **implementation.h**
+  Defines the functions for stack operations and utility functions.
 Implements stack-based algorithms such as infix-to-postfix conversion, string reversal, and expression evaluation.
 
-**stack.h**
+  **stack.h**
 Defines the CustomStack class.
 Contains function prototypes for stack operations.
 
 
-**Features & Functionalities
-Stack Operations**
+  **Features & Functionalities
+  Stack Operations**
 
 PushItem(int value): Pushes an integer onto the stack.
 PopItem(int &value): Pops an integer from the stack.
