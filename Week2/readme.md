@@ -21,16 +21,16 @@ Contains function prototypes for stack operations.
   **Features & Functionalities
   Stack Operations**
 
-PushItem(int value): Pushes an integer onto the stack.
-PopItem(int &value): Pops an integer from the stack.
-GetTop(): Retrieves the top element of the stack.
-isthisempty(): Checks if the stack is empty.
-isitfull(): Checks if the stack is full.
-**String Reversal**
-kstringreversal(const string &str): Uses a stack to reverse a given string.
-**Parenthesis Balance Checking**
-balancedorno(const string &expr): Verifies if an expression has balanced parentheses.
-**Infix to Postfix Conversion**
-ConvertToPostfix(const string &infix): Converts an infix expression to postfix notation using a stack.
-**Postfix Expression Evaluation**
-ComputeResult(const string &expression): Evaluates a postfix expression using a stack.
+  PushItem(int value): Pushes an integer onto the stack.  
+  PopItem(int &value): Pops an integer from the stack.  
+  GetTop(): Retrieves the top element of the stack.  
+  isthisempty(): Checks if the stack is empty.  
+isitfull(): Checks if the stack is full.  
+  **String Reversal**    
+kstringreversal(const string &str): Uses a stack to reverse a given string.  
+  **Parenthesis Balance Checking**    
+balancedorno(const string &expr): Verifies if an expression has balanced parentheses.  
+  **Infix to Postfix Conversion**    
+ConvertToPostfix(const string &infix): Converts an infix expression to postfix notation using a stack.  
+  **Postfix Expression Evaluation**    
+ComputeResult(const string &expression): Evaluates a postfix expression using a stack.  
