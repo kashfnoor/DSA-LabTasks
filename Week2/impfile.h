@@ -7,7 +7,7 @@ Stack::Stack()
 {
 	top = -1;
 }
-int Stack::IsEmpty() const
+int Stack::isthisempty() const
 {
 	return (top == -1);
 }
@@ -26,7 +26,7 @@ void Stack::Push(itemType newItem)
 }
 void Stack::Pop(itemType& item)
 {
-	if (IsEmpty())
+	if (isthisempty())
 	{
 		cout << "Stack Underflow " << endl;
 		exit(1);
@@ -35,7 +35,7 @@ void Stack::Pop(itemType& item)
 
 }int Stack::Peek() {
 
-	if (IsEmpty())
+	if (isthisempty())
 	{
 		cout << "Stack Underflow " << endl;
 		exit(1);
@@ -45,7 +45,7 @@ void Stack::Pop(itemType& item)
 
 // Non Class Functions
 
-string ReverseString(const string& str) {
+string kstringreversal(const string& str) {
 
 	Stack s;
 
@@ -58,7 +58,7 @@ string ReverseString(const string& str) {
 	string reversed = "";
 	int item;
 
-	while (!s.IsEmpty()) {
+	while (!s.isthisempty()) {
 		s.Pop(item);
 		reversed += item;
 	}
@@ -66,7 +66,7 @@ string ReverseString(const string& str) {
 	return reversed;
 }
 
-bool IsBalanced(const string& par) {
+bool balancedorno(const string& par) {
 	Stack s;
 	int leftPar = 0, rightPar = 0;
 
@@ -77,7 +77,7 @@ bool IsBalanced(const string& par) {
 			leftPar++;
 		}
 		else if (ch == ')') {
-			if (s.IsEmpty()) {
+			if (s.isthisempty()) {
 				return false;
 			}
 			itemType temp;
@@ -88,7 +88,7 @@ bool IsBalanced(const string& par) {
 	}
 
 	if (leftPar == rightPar) {
-		return s.IsEmpty();
+		return s.isthisempty();
 	}
 	else
 		return false;
@@ -126,7 +126,7 @@ string InfixToPostfix(const string& infix) {
 		else if (ch == ')') {
 
 			itemType temp;
-			while (!s.IsEmpty() && s.Peek() != '(' ) {
+			while (!s.isthisempty() && s.Peek() != '(' ) {
 				s.Pop(temp);
 				postfix += temp;
 			}
@@ -136,7 +136,7 @@ string InfixToPostfix(const string& infix) {
 
 			itemType temp;
 
-			while (!s.IsEmpty() && Precedence(s.Peek()) >= Precedence(ch)) {
+			while (!s.isthisempty() && Precedence(s.Peek()) >= Precedence(ch)) {
 				s.Pop(temp);
 				postfix += temp;
 			}
@@ -147,7 +147,7 @@ string InfixToPostfix(const string& infix) {
 
 	itemType temp;
 
-	while (!s.IsEmpty()) {
+	while (!s.isthisempty()) {
 		s.Pop(temp);
 		postfix += temp;
 	}
@@ -162,7 +162,7 @@ int Evaluate(const string& expression) {
 	for (int i = 0; i < expression.length(); i++) {
 		char ch = expression[i];
 
-		if (isdigit(ch)) {
+		if (isitadigit(ch)) {
 
 			s.Push(ch - '0');
 		}
