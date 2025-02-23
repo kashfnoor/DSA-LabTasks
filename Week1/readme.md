@@ -1,4 +1,4 @@
-**This file will include all exercises performed during the DSA Lab for the first week : 
+This file will include all exercises performed during the DSA Lab for the first week : 
 HOW TO USE : 
 To compile and run the examples,
 Save the code in a .cpp file.
