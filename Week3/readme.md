@@ -6,7 +6,7 @@ This repository contains various recursive function implementations in C++.  We 
 **Function:**
 `fact(int n)`
 **Variables:**
-`n` (int): Represents the number for which factorial is calculated.
+`n` (int): Represents the number for which factorial is calculated. 
 **Description:**
 Uses recursion to compute `n! = n * (n  1)!`.  
 Base case: If `n == 0`, returns `1`.  
@@ -16,7 +16,7 @@ Recursive case: Returns `n * fact(n  1)`.
 **Function:** 
 `rev()`
 **Variables:**  
-`ch` (character): Stores input characters.
+`ch` (character): Stores input characters.  
 **Description:**  
 Reads a character and recursively calls itself until a newline is found.
 After recursion, it prints the characters in reverse order.
@@ -26,7 +26,7 @@ After recursion, it prints the characters in reverse order.
 `Power(int X, int N)`
  **Variables:**  
   `X` (int): The base.  
-  `N` (int): The exponent.
+  `N` (int): The exponent.  
  **Description:**  
   Computes (X^N) using recursion, where: 
    Base case: If `N == 0`, returns `1`.
@@ -37,7 +37,7 @@ After recursion, it prints the characters in reverse order.
 `Ackermann(int m, int n)`
 **Variables:**  
 `m` (int): First parameter of the Ackermann function.  
-`n` (int): Second parameter.
+`n` (int): Second parameter.  
  **Description:**  
 A deep recursive function used in theoretical computer science.
 Base case: If `m == 0`, returns `n + 1`.
@@ -48,7 +48,7 @@ Recursive cases:
  **Exercise 3.3a: Recursive Printing from N to 0**
  **Function:** `PrintN(int n)`
  **Variables:**  
-   `n` (int): The number from which to start printing.
+   `n` (int): The number from which to start printing.  
  **Description:**  
 Prints numbers from `n` to `0` using recursion.
 Base case: If `n < 0`, returns.
@@ -59,13 +59,11 @@ Recursive case: Prints `n` and calls `PrintN(n  1)`.
  `CBC(int n, int k)`
  **Variables:**  
 `n` (int): Total number of items.  
-`k` (int): Number of selected items.
+`k` (int): Number of selected items.  
  **Description:**  
    Computes binomial coefficient using Pascal’s triangle formula.
    Base case: If `k == 0` or `k == n`, returns `1`.
    Recursive case: Returns `CBC(n  1, k  1) + CBC(n  1, k)`.
-
-
 
  **Exercise 3.3c: Prime Number Checking**
  **Functions:**  
@@ -73,7 +71,7 @@ Recursive case: Prints `n` and calls `PrintN(n  1)`.
    `IsNumberPrime(int num)`
  **Variables:**  
    `num` (int): Number to check for primality.  
-   `divisor` (int): Used to check divisibility.
+   `divisor` (int): Used to check divisibility.  
  **Description:**  
    `CheckPrime(int num, int divisor)`
      Recursively checks if `num` is divisible by `divisor`.
