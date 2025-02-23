@@ -6,16 +6,15 @@ The Complex class represents complex numbers and includes:
   
 Variables: 
 re (real part) 
-im (imaginary part)  
-Functions: 
+im (imaginary part)    
+Functions:   
 Magnitude(): Calculates the magnitude of the complex number. 
 Real(), Imag(): Return the real and imaginary parts. 
 Operator overloading for +, =, and * to handle complex number operations. 
 
 Example 1.1
 --------------
-Functions for finding the maximum of two numbers:  
-  
+
 Variables: 
 X, Y: Two numbers to compare. 
 Larger: Stores the maximum value. 
