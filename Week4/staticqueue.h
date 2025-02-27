@@ -1,6 +1,6 @@
- (4.1 static version)
-#ifndef SKAKIC_H
-#define SKAKIC_H
+//4.1 static version
+#ifndef STATIC_H
+#define STATIC_H
 #include<iostream>
 using namespace std;
 #define MAX 10
